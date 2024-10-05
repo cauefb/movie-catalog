@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="my-4 text-center">Novo Gênero</h1>
+
+  <div class="form-container">
+    <%= render 'form', genre: @genre %>
+  </div>
+
+  <div class="text-center">
+    <%= link_to 'Voltar', genres_path, class: 'btn btn-secondary my-4' %>
+  </div>
+</div>

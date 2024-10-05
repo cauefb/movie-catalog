@@ -1,0 +1,8 @@
+<div class="container">
+<h1 class="my-4 text-center">Genero: <%= @genre.name %></h1>
+
+<div class="btn-group" role="group">
+  <%= link_to 'Editar', edit_genre_path(@genre), class: 'btn btn-warning' %>
+  <%= link_to 'Voltar', genres_path, class: 'btn btn-secondary' %>
+</div>
+</div>
