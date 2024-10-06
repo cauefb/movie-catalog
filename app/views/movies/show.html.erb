@@ -4,7 +4,7 @@
 <p><strong>País de Origem:</strong> <%= @movie.country_of_origin %></p>
 <p><strong>Duração:</strong> <%= @movie.duration %> minutos</p>
 <p><strong>Diretor(a):</strong> <%= @movie.director %></p>
-<p><strong>Gênero:</strong> <%= @movie.genre %></p>
+<p><strong>Gênero:</strong> <%= @movie.genre.name %></p>
 <%= link_to 'Voltar', movies_path, class: 'btn btn-secondary' %>
 <%= link_to 'Editar', edit_movie_path(@movie), class: 'btn btn-warning' %>
 <%= link_to 'Excluir', @movie, method: :delete, data: { confirm: 'Tem certeza?' }, class: 'btn btn-danger' %>

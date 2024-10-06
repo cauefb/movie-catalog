@@ -44,7 +44,7 @@
 
   <div class="form-group">
     <%= form.label :genre %>
-    <%= form.text_field :genre, class: 'form-control' %>
+    <%= form.collection_select :genre_id, Genre.all, :id, :name,  class: 'form-control' %>
   </div>
 
   <%= form.submit class: 'btn btn-primary' %>
