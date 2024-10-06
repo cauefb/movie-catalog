@@ -1,0 +1,28 @@
+<h1><%= action_name.capitalize %> Director</h1>
+
+<%= form_with(model: @director, local: true) do |form| %>
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= form.label :nationality %>
+    <%= form.text_field :nationality, class: "form-control" %>
+  </div>
+
+ <div class="form-group">
+  <%= form.label :birth_date %>
+  <%= form.text_field :birth_date, type: "date", class: "form-control" %>
+</div>
+
+  <div class="form-group">
+    <%= form.label :favorite_genre %>
+    <%= form.text_field :favorite_genre, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-success" %>
+    <%= link_to 'Back', directors_path, class: 'btn btn-primary' %>
+  </div>
+<% end %>
